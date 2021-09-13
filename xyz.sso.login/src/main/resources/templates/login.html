@@ -6,9 +6,10 @@
 </head>
 <body>
 <h1>这是一个登录页面</h1>
-<form>
-    用户：<label><input name="username" value=""></label>
-    密码：<label><input name="password" value=""></label>
+<form action="/login/doLogin">
+    用户：<label><input name="username" value="Maple"></label>
+    密码：<label><input name="password" value="123456"></label>
+    重定向地址<label><input type="text" name="redirect" th:value="${red_url}"></label>
     <button type="submit">提交</button>
 </form>
 </body>

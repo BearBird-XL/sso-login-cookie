@@ -5,14 +5,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+/**
+ * @author xionglei
+ * @create 2021-09-07 16:30
+ */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Accessors(chain = true)
-public class User {
+public class BspUser {
 
     private String id;
-    private String username;
-    private String password;
-
+    private User attributes;
 }
